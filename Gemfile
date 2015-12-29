@@ -38,7 +38,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
-  gem 'shoulda-matchers', github: 'thoughtbot/shoulda-matchers'
+  gem 'shoulda-matchers', "~> 3.0.1"
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
 group :development do
