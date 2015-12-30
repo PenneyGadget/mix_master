@@ -5,6 +5,7 @@ RSpec.feature "User edits an exisiting artist" do
     artist = create(:artist)
 
     visit artist_path(artist)
+    
     click_on "Edit Artist"
     fill_in "artist_name", with: "Bob Marley and the Wailers"
     click_on "Update Artist"

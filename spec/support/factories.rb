@@ -1,6 +1,10 @@
 FactoryGirl.define do
   factory :artist do
-    name "Bob Marley"
-    image_path "http://cps-static.rovicorp.com/3/JPG_400/MI0003/146/MI0003146038.jpg"
+    name "Gogol Bordello"
+    image_path "https://upload.wikimedia.org/wikipedia/commons/0/03/Gogol_Bordello_at_the_Aggie_Theatre.jpg"
+  end
+
+  factory :song do
+    title "Alcohol"
   end
 end
