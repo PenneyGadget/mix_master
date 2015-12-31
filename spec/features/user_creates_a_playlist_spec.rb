@@ -16,11 +16,11 @@ RSpec.feature "User creates a playlist" do
 
     expect(page).to have_content playlist_name
 
-    with("li:first") do
+    within("li:first") do
       expect(page).to have_link song_one.title, href: song_path(song_one)
     end
 
-    with("li:last") do
+    within("li:last") do
       expect(page).to have_link song_three.title, href: song_path(song_three)
     end
   end
