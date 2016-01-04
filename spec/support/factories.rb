@@ -30,10 +30,16 @@ FactoryGirl.define do
   end
 
   factory :playlist do
-    name { generate(:playlist_name) }
+    name
 
     factory :playlist_with_songs do
-      songs { create_list(:song, 3) }
+      transient do
+        songs_count 3
+      end
     end
+
+    # factory :playlist_with_songs do
+    #   songs { create_list(:song, 3) }
+    # end
   end
 end
