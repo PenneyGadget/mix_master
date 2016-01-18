@@ -30,7 +30,7 @@ FactoryGirl.define do
   end
 
   factory :playlist do
-    name
+    name { generate(:playlist_name)}
 
     factory :playlist_with_songs do
       transient do

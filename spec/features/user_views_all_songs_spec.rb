@@ -11,7 +11,6 @@ RSpec.feature "User can view all songs" do
 
     expect(page).to have_content "A Title"
     expect(page).to have_selector "ul#songs li:nth-child(1)", text: "A Title"
-
     expect(page).to have_selector "ul#songs li:nth-child(3)", text: "C Title"
     expect(page).to have_selector "ul#songs li:nth-child(4)", text: "D Title"
 
